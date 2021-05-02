@@ -30,5 +30,16 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    if(screen.width <= 500){
+      document.querySelector('.card').addEventListener('touchstart', f);
+    }
+    function f(ev){
+      document.querySelector('#left_slide').style.transform = 'rotateY(-360deg)';
+      document.querySelector('#right_slide').style.transform = 'rotateY(360deg)';
+      document.querySelector('.back_slide').style.transform = 'translateZ(0px)';
+      document.querySelector('.back_slide').style.zIndex = '2';
+    }
+  </script>
 </body>
 </html>
