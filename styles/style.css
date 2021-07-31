@@ -78,6 +78,7 @@
 	background: -webkit-linear-gradient(to right, #11ffbd, #aaffa9);
 	background: linear-gradient(to right, #11ffbd, #aaffa9);
 	border-radius: 8px;
+	opacity: 0.7;
 }
 .container .card:hover #left_slide {
 	transform: rotateY(-360deg);
